@@ -1,0 +1,23 @@
+name:                test-game-gloss
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/thalesmg/test-game-gloss#readme
+license:             BSD3
+author:              Thales Macedo Garitezi
+maintainer:          thalesmg@gmail.com
+copyright:           GPLv3
+category:            Web
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - gloss
+  - gloss-rendering
+  - GLFW-b
+
+executables:
+  test-game-gloss:
+    source-dirs:      src
+    main:             Main.hs

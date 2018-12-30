@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 07191c2b6ab210beef18d57c1befdb7a31b5ed84c33c394b337cd8ec27cb2aee
+
+name:           test-game-gloss
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/thalesmg/test-game-gloss#readme
+author:         Thales Macedo Garitezi
+maintainer:     thalesmg@gmail.com
+copyright:      GPLv3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable test-game-gloss
+  main-is: Main.hs
+  other-modules:
+      Paths_test_game_gloss
+  hs-source-dirs:
+      src
+  build-depends:
+      GLFW-b
+    , base >=4.7 && <5
+    , gloss
+    , gloss-rendering
+  default-language: Haskell2010
